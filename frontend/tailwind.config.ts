@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
 
+
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,8 +11,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        black: {
+          DEFAULT: '#000',
+          100: '#000319'
+
+        },
+        red: {
+          DEFAULT: '#b91c1c',
+          200: '#fecaca',
+        }
+        
       },
     },
   },
