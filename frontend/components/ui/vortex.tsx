@@ -63,8 +63,11 @@ export const Vortex = (props: VortexProps) => {
       if (ctx) {
         resize(canvas, ctx);
         initParticles();
+        ctx.filter = `blur(${10}px)`;
         draw(canvas, ctx);
+        
       }
+      
     }
   };
 

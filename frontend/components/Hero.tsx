@@ -24,7 +24,7 @@ const Hero = () => {
             </p>
         </WavyBackground>
         <div className=" pt-32 max-w-4xl mx-auto pb-40"> 
-        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+        <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-900 font-sans">
         Unlock the Power Within: Crystals for Balance, Healing, and Transformation.
       </h2>
       <Carousel items={cards} />
@@ -59,23 +59,47 @@ const Hero = () => {
   const DummyContent = () => {
     return (
       <>
-        {[...new Array(3).fill(1)].map((_, index) => {
+        
           return (
             <div
-              key={"dummy-content" + index}
+              key={"dummy-content" }
               className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
             >
               <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
                 <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                  The first rule of Apple club is that you boast about Apple club.
+                Crystals naturally emit subtle but powerful vibrations due to their
+                 unique molecular structures,
                 </span>{" "}
-                Keep a journal, quickly jot down a grocery list, and take amazing
-                class notes. Want to convert those notes to text? No problem.
-                Langotiya jeetu ka mara hua yaar is ready to capture every
-                thought.
+                 which interact with the energy
+                 fields surrounding our body, also known as the aura.
+                 These vibrations work to realign and balance the body’s 
+                 own energy, promoting harmony between the physical, emotional, 
+                 and spiritual planes.
               </p>
               <Image
-                src="https://assets.aceternity.com/macbook.png"
+                src="https://images.unsplash.com/photo-1546608135-e5de34abc308?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Macbook mockup from Aceternity UI"
+                height="500"
+                width="500"
+                className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+              />
+            </div>
+            <div
+              key={"dummy-content" }
+              className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+            >
+              <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+                <span className="font-bold text-neutral-700 dark:text-neutral-200">
+                By absorbing, storing, and transmitting energy,
+                </span>{" "}
+                 crystals help to clear blockages in the body’s energy pathways (chakras),
+                 restoring natural flow and allowing for greater mental clarity, emotional
+                  stability, and overall well-being. Regular use of crystals can promote a
+                   deep sense of inner peace, reducing
+                 stress and anxiety while fostering emotional resilience and balance.
+              </p>
+              <Image
+                src="https://images.unsplash.com/photo-1580916964970-b14c09d28879?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fGNyeXN0YWx8ZW58MHx8MHx8fDA%3D"
                 alt="Macbook mockup from Aceternity UI"
                 height="500"
                 width="500"
@@ -83,7 +107,7 @@ const Hero = () => {
               />
             </div>
           );
-        })}
+       
       </>
     );
   };
